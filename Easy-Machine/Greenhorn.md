@@ -7,18 +7,24 @@ Don't forget to add the machine IP and domain to your `/etc/hosts/`. Let's start
 
 ## **Reconnaissance**
 First thing to do in penetration testing is doing reconnaissance or recon, so we can understand what services running in the network. To do this, i used `nmap`, a recon tool that used for mapping a network and finding what service that running on a network.
-I used a few tags that provided by nmap. Here is the full command `nmap <machine-ip> -sC -p- -T5 -O -oN nmap1.txt`. -sC to run a script, -p- means search in all ports, -T5 is the speed, -O find the OS version, and -oN to create an output file. 
-After running nmap, i 3 services that are running in 10.10.11.25 (machine ip). 
+I used a few tags that provided by nmap. Here is the full command `nmap <machine-ip> -sC -p- -T5 -O -oN nmap1.txt`. -sC to run a script, -p- means search in all ports, -T5 is the speed, -O find the OS version, and -oN to create an output file.
+
+After running nmap, i found 3 services that are running in 10.10.11.25 (machine ip).
+
 ![image](https://github.com/user-attachments/assets/d28e5112-10b5-4792-af3a-35ab81df6812) 
+
 (nmap output)
 
 From the nmap output, i knew that ssh and http are running. But, the intersting one is the service that running in port 3000, but let me take a look of the http service.
 
 ![image](https://github.com/user-attachments/assets/fe97cbcf-acbf-4198-b8d0-746de60b0794) 
+
 (HTTP page)
 
 Okay, that is how the page looks like. From this, i know that this website use Pluck CMS. I tried to view the page source and found the pluck's version, which is **4.7.18**.
+
 ![image](https://github.com/user-attachments/assets/3c02a83a-de07-4703-8aa5-c0b554d09832) 
+
 (Source page)
 
 Next, when i saw the url, i thought maybe i can get a file from the server by using the url `http://greenhorn.htb/?file=<file-name>`. I tried to change the file name to /etc/passwd/ to see if this web is vulnerable to this attack. This is the result that i got:
@@ -28,13 +34,16 @@ Next, when i saw the url, i thought maybe i can get a file from the server by us
 
 So the website using some kind of security measure that prevent me to do that attack. Okay, i need to find another vulnerability.
 
-I used 'dirsearch', a recon tool to find any directory that the web's have.
+I used `dirsearch`, a recon tool to find any directory that the web's have.
 
 ![image](https://github.com/user-attachments/assets/39b28a01-d973-4c59-a996-1ec50b4c2737)
+
 ![Screenshot 2024-10-31 112649](https://github.com/user-attachments/assets/be253cea-9251-484a-9584-4c6615b00be4) 
+
 (dirsearch output)
 
-I found a few directories, but i only take two that i think i can find a vulnerability, login.php and admin.php. When i tried to access admin.php, it needs me to logged in first (of course). 
+I found a few directories, but i only take two that i think i can find a vulnerability, login.php and admin.php. When i tried to access admin.php, it needs me to logged in first (of course).
+
 Because i knew this pluck's version, i searched the exploit for this. I found from the CVE database, few github repository, but what i used is this one: [https://github.com/Rai2en/CVE-2023-50564_Pluck-v4.7.18_PoC](url). It has the poc.py and shell.rar. This is a RCE vulnerability where we can upload a file containing php reverse shell and then we run that shell and we can get the shell of the website and run some command there.
 
 You can read the README.md to understand how to use this exploit, i will not explain it here because the README is easy to understand.
