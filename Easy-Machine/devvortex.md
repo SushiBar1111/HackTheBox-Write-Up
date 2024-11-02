@@ -183,7 +183,8 @@ I used `JohnTheRipper` to crack it with rockyou.txt wordlist.
 
 
 <div align="center">
-    <img src=https://github.com/user-attachments/assets/84c332d9-ff98-43db-a8bc-8608d690d617>
+    <img src=https://github.com/user-attachments/assets/44900b4a-2cf7-4815-9361-d004a21ccdbc)
+>
 </div>
 
 
