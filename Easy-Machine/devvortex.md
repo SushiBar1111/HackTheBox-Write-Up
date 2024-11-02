@@ -94,7 +94,7 @@ Payload:
 
 Result:
 
-<div align="center"
+<div align="center">
     <img src=https://github.com/user-attachments/assets/fe3f4e00-ae69-44d7-afd4-9165d38c76d4>
 </div>
 
