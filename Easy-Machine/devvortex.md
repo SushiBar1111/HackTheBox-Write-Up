@@ -106,7 +106,7 @@ I found a username and the password and tried it to login to administrator page.
 
 
 <div align="center">
-    <img src=https://github.com/user-attachments/assets/065a13e7-c327-4626-8b55-d56ade97a148"
+    <img src=https://github.com/user-attachments/assets/065a13e7-c327-4626-8b55-d56ade97a148>
 </div>
 
 
