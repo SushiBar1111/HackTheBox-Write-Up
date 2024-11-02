@@ -16,16 +16,18 @@ The goal to do port scanning is to find which ports are open in the target IP ad
     <img src=https://github.com/user-attachments/assets/6f6f6bb7-1c21-4f07-9397-d97ac44a8778>
 </div>
 
-<div>nmap result</div>
+<div align="center">nmap result</div>
 
 The result from the nmap, tells me that there are 2 open ports, **port 22 for ssh**, and **port 80 for http**, and one port which is filtered. So, from this i knew that devvortex has a web page and browse that on my browser.
 
 ### Subdomain Enmuration 
 Other than finding open ports, sometime we need to find another sub-domain that a web has. I used `ffuf` to try finding the subdomain of devvortex.htb. Here is my payload: `ffuf -c -w /usr/share/wordlists/amass/subdomains-top1mil-5000.txt -u http://FUZZ.devvortex.htb -o subdomain1.txt -p 2`
 
-<div>![image](https://github.com/user-attachments/assets/c3b492fc-f091-4b71-a594-540f36f20248)</div>
+<div align="center">
+    <img src=https://github.com/user-attachments/assets/c3b492fc-f091-4b71-a594-540f36f20248>
+</div>
 
-<div>subdomain result</div>
+<div align="center">subdomain result</div>
 
 From the output, i found that devvortex has another subdomain named **dev**. Maybe this is where the entry point for us.
 
@@ -37,7 +39,9 @@ Payload:
 
 **Dirsearch output**
 
-<div>![image](https://github.com/user-attachments/assets/9855a7a3-439c-40ac-9ff4-2a3ba50d68ff)</div>
+<div aling="center"
+    <img src=https://github.com/user-attachments/assets/9855a7a3-439c-40ac-9ff4-2a3ba50d68ff>
+</div>
 
 I found interesting directory that normal user are allowed to enter. When i enter the url, turns out that was a page to login to Joomla, a CMS, that are used by devvortex.
 
