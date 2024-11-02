@@ -23,14 +23,15 @@ Other than finding open ports, sometime we need to find another sub-domain that 
 
 ![image](https://github.com/user-attachments/assets/c3b492fc-f091-4b71-a594-540f36f20248)
 
-                                  (subdomain)
+                                    subdomain
 
 From the output, i found that devvortex has another subdomain named **dev**. Maybe this is where the entry point for us.
 
 ### Directory Enumeration
 Because i've found the subdomain of devvortex, i tried to do another enumeration, which is directory enumeration, to find maybe there are some critical directory that are allowed for normal user. I used `dirsearch` to help me find the directories.
 Payload: 
-(dirsearch -u http://dev.devvortex.htb -o dirsearch1.txt)
+
+    dirsearch -u http://dev.devvortex.htb -o dirsearch1.txt
 
 **Dirsearch output**
 
@@ -46,7 +47,9 @@ Here is the page view:
 
 Now, i wanted to find the Joomla version, but it was not there in source page. I look for ways to view Joomla version in Google and i found it. Turns out you can view the Joomla version if you know the directory.
 
-Viewing Joomla version: > http://www.[thejoomlawebsite].com/administrator/manifests/files/joomla.xml.
+Viewing Joomla version: 
+
+    http://www.[thejoomlawebsite].com/administrator/manifests/files/joomla.xml.
 
 Now change the the url to domain to dev.devvortex.htb. Here is the version of devvortex's Joomla:
 
@@ -63,7 +66,9 @@ Now, after i've found some data like from doing enumeration and found out that d
 
 From the web link above, there are a 2 ways to exploit the vulnerability. I used the first one, when i tried the second one, it only gave me the user, user type, email, username not with the password.
 
-Payload: > curl -v http://dev.devvortex.htb/api/index.php/v1/config/application?public=true
+Payload: 
+
+    curl -v http://dev.devvortex.htb/api/index.php/v1/config/application?public=true
 
 Result:
 
@@ -78,7 +83,9 @@ I found a username and the password and tried it to login to administrator page.
 
 Next, i go to settings and choose one of the templates. I chose Site Template -> cassiopeia -> error.php file. I change the content of it to php pentestmonkey that i got from [revshells.com] and save the file. Next, i used netcat to listen and curl to sending a request to error.php so that the web will run it.
 
-Curl payload: > curl -k http://dev.devvortex.htb/templates/cassiopeia/error.php
+Curl payload: 
+
+    curl -k http://dev.devvortex.htb/templates/cassiopeia/error.php
 
 ![image](https://github.com/user-attachments/assets/450dce9b-59fa-488c-9f5d-06c811fee2c5)
 
@@ -90,7 +97,9 @@ After successful connect to the web server, I change directory to /home and foun
 
 logan has the user.txt but i cannot read it because i am not logan, i am still www-data. I read from the explanation website again and see that Joomla used mysql. So, i tried to connect to mysql with user lewis and his password and look if i could find logan's password in the database.
 
-mysql command: > mysql -u lewis -p 
+mysql command: 
+
+    mysql -u lewis -p 
 
 ![image](https://github.com/user-attachments/assets/9d1cea69-2a2d-4a4f-9778-ad8fff0f125b)
 
@@ -102,7 +111,7 @@ So the database that interesting is joomla of course. Then, i used it and list a
 
                                   (sd4fg_users)
 
-sdf4g_users table is one of the interesting one so i select that table and view all the value. I found logan's encrypted password.
+`sdf4g_users` table is one of the interesting one so i select that table and view all the value. I found logan's encrypted password.
 
 ![Screenshot 2024-11-02 163748](https://github.com/user-attachments/assets/ec17184f-c6cd-48d0-9033-a13c905cdddd)
 
@@ -130,7 +139,7 @@ After finding the user.txt, i changed to connect to ssh using logan's credential
                                 (logan's permission to run)
 
 Searching exploit for `/usr/bin/apport-cli`, I found the PoC from github, [https://github.com/diego-tella/CVE-2023-1326-PoC]. If i am not wrong understanding that, basically we can run `sudo /usr/bin/apport-cli` to run some .crash file and get root privilege from that. So, I tried it. But, i didn't follow the PoC because i didn't have the crash file and when i make a new one i don't know it wont work.
-So, I read another write up, [https://medium.com/@aniketdas07770/hackthebox-devvortex-writeup-b6fa1f007dff]. From that write up, he/she used --file-bug so i followed it and gain root access.
+So, I read another write up, [https://medium.com/@aniketdas07770/hackthebox-devvortex-writeup-b6fa1f007dff]. From that write up, he/she used `--file-bug` so i followed it and gain root access.
 
 ![Screenshot 2024-11-02 165839](https://github.com/user-attachments/assets/ab2863f2-e3cb-4154-96e4-9242fb908e78)
 
