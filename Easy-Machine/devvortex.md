@@ -57,7 +57,7 @@ Now change the the url to domain to dev.devvortex.htb. Here is the version of de
 
                                 (Joomla version)
 
-Now, I searched for exploit for Joomla with that version and found it here: [https://vulncheck.com/blog/joomla-for-rce]. The exploit is we can curl specific directory from the webpage and make it public so it leaks to us (something like that, sorry if i wrong).
+Now, I searched for exploit for Joomla with that version and found it here: [https://vulncheck.com/blog/joomla-for-rce]. The exploit is we can curl specific directory from the webpage and make it public so it leaks to us (something like that, sorry if i was wrong).
 
 ## Exploitation
 
