@@ -12,7 +12,9 @@ Enumeration is the first thing that we need to do while doing penetration testin
 ### Port scanning with Nmap
 The goal to do port scanning is to find which ports are open in the target IP address/network. I used `nmap` to do port scanning because i'm familiar with it.
 
-<div>![image](https://github.com/user-attachments/assets/6f6f6bb7-1c21-4f07-9397-d97ac44a8778)</div>
+<div align="center">
+    <img src=https://github.com/user-attachments/assets/6f6f6bb7-1c21-4f07-9397-d97ac44a8778>
+</div>
 
 <div>nmap result</div>
 
