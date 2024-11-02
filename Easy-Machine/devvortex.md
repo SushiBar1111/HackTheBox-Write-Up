@@ -29,7 +29,8 @@ From the output, i found that devvortex has another subdomain named **dev**. May
 
 ### Directory Enumeration
 Because i've found the subdomain of devvortex, i tried to do another enumeration, which is directory enumeration, to find maybe there are some critical directory that are allowed for normal user. I used `dirsearch` to help me find the directories.
-Payload: > dirsearch -u http://dev.devvortex.htb -o dirsearch1.txt
+Payload: 
+(dirsearch -u http://dev.devvortex.htb -o dirsearch1.txt)
 
 **Dirsearch output**
 
