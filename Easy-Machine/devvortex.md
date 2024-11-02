@@ -56,7 +56,7 @@ I found interesting directory that normal user are allowed to enter. When i ente
 Here is the page view:
 
 
-<div align="center"
+<div align="center">
     <img src=https://github.com/user-attachments/assets/6573cd78-0ef0-43a4-bf83-a22131733c16>
 </div>
 
