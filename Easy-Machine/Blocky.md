@@ -45,7 +45,7 @@ Payload:
 From the output, I got many directories. I checked it one by one looking for something interesting. When I look into `/plugins/` directory, it has two .jar files that seems intersting. So, I downloaded both of them and check it. I check the **Blockycore.jar** first and found an sqluser and sqlpassword.
 
 <div align="center">
-  <img src=https://github.com/user-attachments/assets/34476ef0-4fe3-4fe0-9d25-344d95cca4ea
+  <img src=https://github.com/user-attachments/assets/34476ef0-4fe3-4fe0-9d25-344d95cca4ea>
 </div>
 <br/><br/>
 <div align="center">Blockycore.jar</div>
