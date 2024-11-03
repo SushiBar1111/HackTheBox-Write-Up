@@ -36,7 +36,7 @@ Payload:
     dirsearch -u <target-url> -o dirsearch1.txt
 
 <div align="center">
-  <img src=https://github.com/user-attachments/assets/d7f422fd-99cd-4637-8c5a-129acb7cec1d
+  <img src=https://github.com/user-attachments/assets/d7f422fd-99cd-4637-8c5a-129acb7cec1d>
 </div>
 <br/><br/>
 <div align="center">dirsearch output</div>
