@@ -1,7 +1,7 @@
 # HackTheBox Blocky Easy Linux Machine Write Up
 
 <div align="center">
-  <img src=(https://github.com/user-attachments/assets/fc5e44d6-c3c4-4a7a-943d-d825e83f7e6f>
+  <img src=https://github.com/user-attachments/assets/fc5e44d6-c3c4-4a7a-943d-d825e83f7e6f>
 </div>
 <br/><br/>
 
