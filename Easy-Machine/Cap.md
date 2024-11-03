@@ -1,7 +1,8 @@
 # Write Up for "Cap" Easy Linux Machine From HackTheBox
+![image](https://github.com/user-attachments/assets/bf290da1-bc26-4496-9621-a73f853fdffb)
 
 ## Description
-
+Cap is an old easy Linux machine from HackTheBox. Vulnerabilities that can be found in this machine are IDOR and Linux capabilities to gain root access.
 
 ## Enumeration and Reconnaissance
 
