@@ -5,7 +5,7 @@
 
 ## Machine Description
 
-Headless is a retired easy machine from HackTheBox. This machine is good to learn cookie stealing using XSS and gain root privilege using allowed sudo file. To be honest, when I'm solving this, I followed a walkthrough on Youtube from PinkDraconian channel because I am a newbie and I am not familiar with XSS. If you want to check out his youtube, here is the link [https://www.youtube.com/watch?v=JT4bYzMUDMs](PinkDraconian).
+Headless is a retired easy machine from HackTheBox. This machine is good to learn cookie stealing using XSS and gain root privilege using allowed sudo file. To be honest, when I'm solving this, I followed a walkthrough on Youtube from PinkDraconian channel because I am a newbie and I am not familiar with XSS. If you want to check out his youtube, here is the link [PinkDraconian](https://www.youtube.com/watch?v=JT4bYzMUDMs).
 Okay, let's start!.
 
 ## Enumartion and Reconnaissance
@@ -58,8 +58,6 @@ It says that we can send a question so I clicked on that button and redirected t
 <br/><br/>
 
 This could be vulnerable to XSS attack.
-
-<br/><br/>
 
 ### Directory Enumeration with GoBuster
 
@@ -136,7 +134,7 @@ So, I tried with `ls` command to see can I see files in this directory.
 </div>
 <br/><br/>
 
-After found out that I can use command to see the files, I used reverse shell payload. I used a python shortest payload and make it URL encoded from [https://revshells.com](revshells) following the walkthrough.
+After found out that I can use command to see the files, I used reverse shell payload. I used a python shortest payload and make it URL encoded from [revshells](https://revshells.com) following the walkthrough.
 
 Turn on listener with netcat and send it, I got the shell.
 
@@ -173,6 +171,6 @@ After overwriting, I ran it and got root access and read the root.txt
 ![Screenshot 2024-11-03 110127](https://github.com/user-attachments/assets/ebbaefa8-c998-4157-9230-f6ddbf45ed95)
 
 
-Okay, that's all. Thank you for [https://www.youtube.com/watch?v=JT4bYzMUDMs](PinkDraconian) for the walkthrough, you guys can check out his video its very thorough and easy to understand. Thank you for reading!
+Okay, that's all. Thank you for [PinkDraconian](https://www.youtube.com/watch?v=JT4bYzMUDMs) for the walkthrough, you guys can check out his video its very thorough and easy to understand. Thank you for reading!
 
 
