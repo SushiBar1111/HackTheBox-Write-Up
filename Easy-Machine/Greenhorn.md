@@ -167,9 +167,9 @@ To read the root.txt, i need to perform a privileged escelation. su root is deni
 </div>
 <br/>
 
-Turns out, it was some note that contain a root password but it was pixelated. To be honest, i was stuck here for like 30 minutes and then i gave up and search for another write up, i found the write up from Iam Gh0st in medium (thank you for Iam Gh0st for the write up you helped me. You can check it if you want with this link: [medimu](https://medium.com/@iam.gh0s700/hackthebox-greenhorn-95245df0a39d).
+Turns out, it was some note that contain a root password but it was pixelated. To be honest, i was stuck here for like 30 minutes and then i gave up and search for another write up, i found the write up from Iam Gh0st in medium (thank you for Iam Gh0st for the write up you helped me. You can check it if you want with this link: [medium](https://medium.com/@iam.gh0s700/hackthebox-greenhorn-95245df0a39d).
 
-It turns out, i need to use a tool to un-pixelated the image using Depix. Here is the tool's repository: [https://github.com/spipm/Depix](Depix). 
+It turns out, i need to use a tool to un-pixelated the image using Depix. Here is the tool's repository: [Depix](https://github.com/spipm/Depix). 
 
 I seperated the image from the pdf using online tool and run the Depix tool following the guide. 
 Eventually, i got the password:
