@@ -1,7 +1,8 @@
 # HackTheBox Easy Linux Machine "Lame" Write Up
+![image](https://github.com/user-attachments/assets/29b27690-81ba-4a62-a0ad-ba0363998851)
 
 ## Description
-Lame is an easy Linux machine from HackTheBox.
+Lame is an easy Linux machine from HackTheBox with exploiting SMB service using metasploit. This machine was released long ago like seven years ago.
 
 ## Enumeration
 
