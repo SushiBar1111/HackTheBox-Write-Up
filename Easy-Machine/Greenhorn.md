@@ -39,7 +39,7 @@ Okay, that is how the page looks like. From this, i know that this website use P
 <br/>
 
 <div align="center">
-(Source page)
+(Pluck CMS Version)
 </div>
 <br/>
 
@@ -75,7 +75,7 @@ I used `dirsearch`, a recon tool to find any directory that the web's have.
 
 I found a few directories, but i only take two that i think i can find a vulnerability, login.php and admin.php. When i tried to access admin.php, it needs me to logged in first (of course).
 
-Because i knew this pluck's version, i searched the exploit for this. I found from the CVE database, few github repository, but what i used is this one: [https://github.com/Rai2en/CVE-2023-50564_Pluck-v4.7.18_PoC](CVE-2023-50564_Pluck-v4.7.18_PoC). It has the poc.py and shell.rar. This is a RCE vulnerability where we can upload a file containing php reverse shell and then we run that shell and we can get the shell of the website and run some command there.
+Because i knew this pluck's version, i searched the exploit for this. I found from the CVE database, few github repository, but what i used is this one: [CVE-2023-50564_Pluck-v4.7.18_PoC](https://github.com/Rai2en/CVE-2023-50564_Pluck-v4.7.18_PoC). It has the poc.py and shell.rar. This is a RCE vulnerability where we can upload a file containing php reverse shell and then we run that shell and we can get the shell of the website and run some command there.
 
 You can read the README.md to understand how to use this exploit, i will not explain it here because the README is easy to understand.
 
@@ -86,8 +86,9 @@ But the problem for now is, i didn't know the password yet. This when i remember
   <img src=https://github.com/user-attachments/assets/3e04feb0-4a67-4311-9bac-20cd93285ecf>
 </div>
 <br/>
-<div aling="center">
-    (Greenhorn:3000)
+
+<div align="center">
+(Greenhorn:3000)
 </div>
 <br/>
 
@@ -116,7 +117,7 @@ Next, i tried to find the password. You can explore it yourself, but i found the
 </div>
 <br/>
 
-Next, copy paste this password to [https://www.dcode.fr/cipher-identifier](dcode) to identify what encryption is this, and it said SHA-512. Use decoder online and then i found the password, which is **iloveyou1**. Okay recon is done!.
+Next, copy paste this password to [dcode](https://www.dcode.fr/cipher-identifier) to identify what encryption is this, and it said SHA-512. Use decoder online and then i found the password, which is **iloveyou1**. Okay recon is done!.
 
 ## **Exploit**
 
@@ -140,7 +141,7 @@ While i ran the exploit, my netcat successfully connected and i got the shell. I
 </div>
 <br/>
 
-<div>
+<div align="center">
 (home directory)
 </div>
 <br/>
@@ -166,7 +167,7 @@ To read the root.txt, i need to perform a privileged escelation. su root is deni
 </div>
 <br/>
 
-Turns out, it was some note that contain a root password but it was pixelated. To be honest, i was stuck here for like 30 minutes and then i gave up and search for another write up, i found the write up from Iam Gh0st in medium (thank you for Iam Gh0st for the write up you helped me. You can check it if you want with this link: [https://medium.com/@iam.gh0s700/hackthebox-greenhorn-95245df0a39d](medium).
+Turns out, it was some note that contain a root password but it was pixelated. To be honest, i was stuck here for like 30 minutes and then i gave up and search for another write up, i found the write up from Iam Gh0st in medium (thank you for Iam Gh0st for the write up you helped me. You can check it if you want with this link: [medimu](https://medium.com/@iam.gh0s700/hackthebox-greenhorn-95245df0a39d).
 
 It turns out, i need to use a tool to un-pixelated the image using Depix. Here is the tool's repository: [https://github.com/spipm/Depix](Depix). 
 
