@@ -103,7 +103,7 @@ I found the used Maltrail's version
 </div>
 </br>
 
-Next, I tried to search if there are any exploit for this version. I stumbled upon this: (https://github.com/spookier/Maltrail-v0.53-Exploit)[Maltrail-v0.53].
+Next, I tried to search if there are any exploit for this version. I stumbled upon this: [Maltrail-v0.53](https://github.com/spookier/Maltrail-v0.53-Exploit).
 
 I ran a `netcat` listener and ran the exploit following the readme.
 
