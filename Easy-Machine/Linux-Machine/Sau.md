@@ -133,6 +133,11 @@ Next, to do a privilege escelation, I ran a `sudo -l` to see what user `puma` ca
   <img src="https://github.com/user-attachments/assets/8ddc9d0e-5ef3-446d-97fb-d7f3fc7480b2">
 </div>
 
+<div align="center">
+  allowed sudo for puma
+</div>
+</br>
+
 Turns out, user `puma` may run 
 
     /usr/bin/systemctl status trail.service
@@ -142,11 +147,11 @@ I looked up to find what version this systemctl run on with this command `system
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4f5a5de6-59de-4689-869d-441d1108ae68">
 </div>
-</br>
 
 <div align="center">
   systemctl version
 </div>
+</br>
 
 After finding the version, I searched for the exploit and found this [[systemctl privilege escelation](https://packetstormsecurity.com/files/174130/systemd-246-Local-Root-Privilege-Escalation.html)]
 
