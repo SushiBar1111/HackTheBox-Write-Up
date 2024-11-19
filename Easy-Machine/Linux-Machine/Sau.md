@@ -1,4 +1,4 @@
-![Screenshot 2024-11-20 003625](https://github.com/user-attachments/assets/1c17e219-f68f-4f49-a4b5-22a0cf45fe83)# Sau, Easy Linux Machine from HackTheBox Write up
+# Sau, Easy Linux Machine from HackTheBox Write up
 
 ![image](https://github.com/user-attachments/assets/67356553-be73-4a83-a3c2-f14520741217)
 
@@ -37,7 +37,7 @@ Next, I visited the url with port 55555. It returned with a web page. Here, is t
 </br>
 
 At the bottom of the page, I found that this service is powered by **request-baskets** with version **1.2.1**. Next, I searched for known exploit and found this:
-(https://github.com/entr0pie/CVE-2023-27163)[CVE-2023-27163]
+[[CVE-2023-27163](https://github.com/entr0pie/CVE-2023-27163)]
 
 From what I found, it seems that this service is vulnerable to SSRF. When I tried to use that exploit, it didn't work. I don't know whether i did something wrong or in this machine we can't use that PoC.
 
@@ -108,7 +108,7 @@ Next, I tried to search if there are any exploit for this version. I stumbled up
 I ran a `netcat` listener and ran the exploit following the readme.
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/e43eb3d2-e8e7-4013-90c8-648a212082b8">
+  <img src="https://github.com/user-attachments/assets/e43eb3d2-e8e7-4013-90c8-648a212082b8">
 </div>
 
 <div align="center">
@@ -117,7 +117,7 @@ I ran a `netcat` listener and ran the exploit following the readme.
 </br>
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/5789883c-2a0f-4689-82a7-8294b6e2447c">
+  <img src="https://github.com/user-attachments/assets/5789883c-2a0f-4689-82a7-8294b6e2447c">
 </div>
 
 <div align="center">
@@ -130,7 +130,7 @@ I ran a `netcat` listener and ran the exploit following the readme.
 Next, to do a privilege escelation, I ran a `sudo -l` to see what user `puma` can run with sudo.
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/8ddc9d0e-5ef3-446d-97fb-d7f3fc7480b2">
+  <img src="https://github.com/user-attachments/assets/8ddc9d0e-5ef3-446d-97fb-d7f3fc7480b2">
 </div>
 
 Turns out, user `puma` may run 
@@ -140,7 +140,7 @@ Turns out, user `puma` may run
 I looked up to find what version this systemctl run on with this command `systemctl --version`
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/4f5a5de6-59de-4689-869d-441d1108ae68">
+  <img src="https://github.com/user-attachments/assets/4f5a5de6-59de-4689-869d-441d1108ae68">
 </div>
 </br>
 
@@ -148,7 +148,7 @@ I looked up to find what version this systemctl run on with this command `system
   systemctl version
 </div>
 
-After finding the version, I searched for the exploit and found this (https://packetstormsecurity.com/files/174130/systemd-246-Local-Root-Privilege-Escalation.html)[systemctl privilege escelation]
+After finding the version, I searched for the exploit and found this [[systemctl privilege escelation](https://packetstormsecurity.com/files/174130/systemd-246-Local-Root-Privilege-Escalation.html)]
 
 Following the PoC that provided in that link, I successfully escalate my privilege as root. Next, I found the root.txt on the root directory
 
