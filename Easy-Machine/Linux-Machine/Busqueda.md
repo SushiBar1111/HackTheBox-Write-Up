@@ -46,7 +46,7 @@ After found out that this network has http service, I looked into it. The intere
 </div>
 </br>
 
-As shown the above photo, I knew that this web used **Flask** and **Searchor version 2.4.0**. I was directly searching for the **Searchor** exploit and found out this version of Searchor is vulnerable to Aribitrary CMD Injection in the `eval()` function. I used this PoC: [https://github.com/nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection](Searchor Exploit).
+As shown the above photo, I knew that this web used **Flask** and **Searchor version 2.4.0**. I was directly searching for the **Searchor** exploit and found out this version of Searchor is vulnerable to Aribitrary CMD Injection in the `eval()` function. I used this PoC: [Searcor Exploit](https://github.com/nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection).
 
 ### Exploitation
 
