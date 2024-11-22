@@ -9,6 +9,11 @@
 Blocky is an old very easy and straight forward linux machine released on 21 Jul 2017. Blocky is a machine that used same password to different services, and easy privilege escalation because the user is allowed to do all sudo. The main challenge for me is finding something useful in the directories.
 Let's get started!
 
+## Vulnerability Found
+
+1. Using same password to different services
+2. User allowed to do all sudo
+
 ## Enumeration and Reconnaissance
 While pentesting, it is a must to do enumeration. In this machine, i did port enumaration and directory enumaration.
 
