@@ -60,7 +60,7 @@ Upon finding the credential, I tried to login into the manager app again and usi
 
 ### Exploitation
 
-I found this method to exploit Apache Tomcat by uploading .WAR file from (HackTricks Tomcat)[https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/tomcat#rce]. By following the **MSFVenom Reverse Shell**, I successfully exploiting the Apache server. Here is the step:
+I found this method to exploit Apache Tomcat by uploading .WAR file from [Hacktricks Tomcat](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/tomcat#rce). By following the **MSFVenom Reverse Shell**, I successfully exploiting the Apache server. Here is the step:
 
 1. Create a .WAR file containing java/jsp_reverse_shell_tcp. Payload:
 
