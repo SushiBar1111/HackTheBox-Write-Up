@@ -4,6 +4,10 @@
 ## Description
 Cap is an old easy Linux machine from HackTheBox. Vulnerabilities that can be found in this machine are IDOR and Linux capabilities to gain root access.
 
+## Vulnerabilities Found
+- Insecure Direct Object References
+- Non-privilege user can change UID into root's UID.
+
 ## Enumeration and Reconnaissance
 
 ### Port Scanning with Nmap
