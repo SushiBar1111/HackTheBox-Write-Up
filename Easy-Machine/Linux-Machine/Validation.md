@@ -1,4 +1,4 @@
-![Screenshot 2024-12-11 100408](https://github.com/user-attachments/assets/bedac851-7cd6-480e-9085-ac0f40137276)# Validation Easy Linux Machine From HackTheBox Write up
+# Validation Easy Linux Machine From HackTheBox Write up
 <div align="center">
   <img src=https://github.com/user-attachments/assets/12a11652-02c6-4258-ac3c-c6ef6e81149f>
 </div>
