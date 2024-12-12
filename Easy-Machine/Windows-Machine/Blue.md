@@ -6,7 +6,7 @@
 </br>
 
 ## Vulnerability Found
-1. Using Windows OS version with known vulnerability.
+1. Using Windows OS version with known vulnerability on SMB server.
 
 
 ## Step to Re-produce
