@@ -106,7 +106,7 @@ Next, I tried to use it to log in into the PRTG web in port 80 but it was incorr
 </div>
 </br>
 
-After logged in into the web, I found the version of the PRTG. Next, I looked on internet to find the exploit and I found this )[PRTG Exploit](https://github.com/A1vinSmith/CVE-2018-9276). But, I didn't use it. I found it on metasploit too so I used from the metasploit one.
+After logged in into the web, I found the version of the PRTG. Next, I looked on internet to find the exploit and I found this [PRTG Exploit](https://github.com/A1vinSmith/CVE-2018-9276). But, I didn't use it. I found it on metasploit too so I used from the metasploit one.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/84866ab7-f87e-4f20-97f5-d7339e96236d">
