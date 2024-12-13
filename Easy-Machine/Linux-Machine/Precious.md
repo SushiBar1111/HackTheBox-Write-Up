@@ -21,7 +21,7 @@ Command:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/7fbe4c98-63f4-41a2-a82d-2fcabdc0b3da">
 </div>
-<div>
+<div align="center">
   Nmap output
 </div>
 </br>
@@ -33,7 +33,7 @@ From the nmap output, It shows that this network has two open services, SSH on p
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e83c614d-0250-4ec4-bec2-0616155126eb">
 </div>
-<div>
+<div align="center">
   Web page
 </div>
 </br>
@@ -49,7 +49,7 @@ Step:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/7a802d20-8950-4f88-ba04-478f64500092">
 </div>
-<div>
+<div align="center">
   PDF File
 </div>
 </br>
@@ -59,7 +59,7 @@ It should be like the picture above. Other than testing how the web works in mak
 <div align="center">
   <img src="https://github.com/user-attachments/assets/05501f26-6236-4d29-889d-c28fad9f5f00">
 </div>
-<div>
+<div align="center">
   Web Reponse Header
 </div>
 </br>
@@ -77,7 +77,7 @@ Command:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/3e105075-1c22-4382-afaf-afa06eb0ac4a">
 </div>
-<div>
+<div align="center">
   PDFkit Version
 </div>
 </br>
@@ -91,7 +91,7 @@ I copied the python exploit and made a python file on my terminal and followed t
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6864f31f-0722-45f6-aa74-49a23b4ba082">
 </div>
-<div>
+<div align="center">
   Running the script
 </div>
 </br>
@@ -101,7 +101,7 @@ I copied the python exploit and made a python file on my terminal and followed t
 <div align="center">
   <img src="https://github.com/user-attachments/assets/55039515-9275-4aa8-b389-f29b91e70810">
 </div>
-<div>
+<div align="center">
   Shell Acquired
 </div>
 </br>
@@ -112,7 +112,7 @@ After acquiring the shell, I moved into `/home/henry` directory and found out th
 <div align="center">
   <img src="https://github.com/user-attachments/assets/48162629-5d96-4aad-9e53-f351aa16709d">
 </div>
-<div>
+<div align="center">
   henry's password
 </div>
 </br>
@@ -122,7 +122,7 @@ Next, I ran `su henry` to change super user as henry using that password and mov
 <div align="center">
   <img src="https://github.com/user-attachments/assets/905777be-8643-44b9-a307-64b5745315b2">
 </div>
-<div>
+<div align="center">
   user.txt
 </div>
 </br>
@@ -134,7 +134,7 @@ To find the root.txt, we need to do a privilege escelation. After acquiring the 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/62d7a037-6654-46a1-b479-9d5eab7e423a">
 </div>
-<div>
+<div align="center">
   henry permission to run sudo
 </div>
 </br>
@@ -144,7 +144,7 @@ From the picture above, it appeared that henry is allowed to run sudo for `usr/b
 <div align="center">
   <img src="https://github.com/user-attachments/assets/8f91381c-b598-4fe0-b3c9-e5d144008603">
 </div>
-<div>
+<div align="center">
   update_dependencies.rb file
 </div>
 </br>
@@ -154,7 +154,7 @@ From reviewing the code, I knew that this file read a **.yml** file. But there i
 <div align="center">
   <img src="https://github.com/user-attachments/assets/d35a6d6b-80f7-4d45-9086-fc631462c597">
 </div>
-<div>
+<div align="center">
   Ruby version
 </div>
 </br>
@@ -164,7 +164,7 @@ I found this exploit for the ruby version. It was YAML deserialization. Exploit:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/89634aaf-a429-442b-99b9-da6ceec18c17">
 </div>
-<div>
+<div align="center">
   exploit output
 </div>
 </br>
@@ -176,7 +176,7 @@ After running the `update_dependencies.rb` file, it returned a id for root which
 <div align="center">
   <img src="https://github.com/user-attachments/assets/262869db-37a9-46e9-9859-af2011259bcc">
 </div>
-<div>
+<div align="center">
   Root shell acquired and Root.txt
 </div>
 </br>
