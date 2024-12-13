@@ -1,4 +1,4 @@
-![Screenshot 2024-12-13 145928](https://github.com/user-attachments/assets/1891bb42-7943-4bb6-a6f6-e4bc40f892b2)# Precious HackThebox Easy Linux Machine Write up
+# Precious HackThebox Easy Linux Machine Write up
 
 ![Screenshot 2024-12-13 161321](https://github.com/user-attachments/assets/bc3311ec-84c3-49b9-9fbe-8f50ae32984f)
 
