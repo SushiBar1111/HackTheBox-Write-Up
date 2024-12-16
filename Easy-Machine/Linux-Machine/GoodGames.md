@@ -24,7 +24,7 @@ Payload:
 <div align="center">
   <img src="![image](https://github.com/user-attachments/assets/435788ed-ba62-4493-be27-9d47e1ef393f">
 </div>
-<div>
+<div align="center">
   Nmap output
 </div>
 </br>
@@ -42,7 +42,7 @@ Payload:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2ec42320-a8d9-4a08-8abe-a7502b4dfd8e">
 </div>
-<div>
+<div align="center">
  SQL Injection bypass login successful
 </div>
 </br>
@@ -52,7 +52,7 @@ After that, the web redirected me into the home page and there was another 2 ico
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a39801de-e4bc-4d10-aa25-1a654d0bd55e">
 </div>
-<div>
+<div align="center">
 Internal administration login page
 </div>
 </br>
@@ -80,7 +80,7 @@ SQL query:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/625d8f20-6d5b-46ca-99e6-08576d848787">
 </div>
-<div>
+<div align="center">
 Number of columns returned found
 </div>
 </br>
@@ -98,7 +98,7 @@ But, in this web, only the fourth column that is shown in the web page. You can 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6c2fe5e0-d800-4bb2-bb86-bbcb888cc870">
 </div>
-<div>
+<div align="center">
 SQL Payload
 </div>
 </br>
@@ -106,7 +106,7 @@ SQL Payload
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9c46e97e-5f7d-47a9-81d5-5973d4521ac9">
 </div>
-<div>
+<div align="center">
 SQL Payload
 </div>
 </br>
@@ -116,7 +116,7 @@ As you can see, the 'a' is appeared. Next, listing the database. The payload is 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/94125793-5490-4056-95a5-50fc0c9d700f">
 </div>
-<div>
+<div align="center">
 SQL Payload to list database/schema
 </div>
 </br>
@@ -128,7 +128,7 @@ Payload:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/dcf8f002-6373-40ad-8171-843fb20cf075">
 </div>
-<div>
+<div align="center">
 Schema/database names
 </div>
 </br>
@@ -138,7 +138,7 @@ From the output above, I knew that there were 2 schemas, information schema whic
 <div align="center">
   <img src="https://github.com/user-attachments/assets/089bc8b5-026c-4562-9971-baf0b64959f9">
 </div>
-<div>
+<div align="center">
 SQL Payload to list table name
 </div>
 </br>
@@ -150,7 +150,7 @@ Payload:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/dcf8f002-6373-40ad-8171-843fb20cf075">
 </div>
-<div>
+<div align="center">
 tables in main database
 </div>
 </br>
@@ -160,7 +160,7 @@ The above results shows that the database has 2 tables. First is blogblog_commen
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a319a66d-4213-4bcb-8840-42ae93820e1f">
 </div>
-<div>
+<div align="center">
 SQL Payload to see columns name
 </div>
 </br>
@@ -172,7 +172,7 @@ Payload:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/1423ab20-345c-44ab-a619-0cbf16cec481">
 </div>
-<div>
+<div align="center">
 Result
 </div>
 </br>
@@ -186,7 +186,7 @@ Payload for password:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/46b0fd6e-fde3-482e-9413-f09bd1fa158e">
 </div>
-<div>
+<div align="center">
 Result
 </div>
 </br>
@@ -196,7 +196,7 @@ The password was hashed but it used a weak hash. With web like [hashes.com](http
 <div align="center">
   <img src="https://github.com/user-attachments/assets/352414fb-82a1-47ba-8b9c-25b1b68d1471">
 </div>
-<div>
+<div align="center">
 Decrypted password
 </div>
 </br>
@@ -205,7 +205,7 @@ Decrypted password
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a319a66d-4213-4bcb-8840-42ae93820e1f">
 </div>
-<div>
+<div align="center">
 SQL Payload to see name
 </div>
 </br>
@@ -217,7 +217,7 @@ Payload:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e00246c4-116a-4246-98bd-67e251b68243">
 </div>
-<div>
+<div align="center">
 Result
 </div>
 </br>
@@ -229,7 +229,7 @@ After found the password and name, I used it to login into the internal web and 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/0edac5cb-c285-4997-a3bf-35cb8173ebf1">
 </div>
-<div>
+<div align="center">
 Testing SSTI with {{1+1}} 
 </div>
 </br>
@@ -251,7 +251,7 @@ After obtaining shell, I moved to `/home` directory and found that there is a us
 <div align="center">
   <img src="https://github.com/user-attachments/assets/f3756726-8e05-4314-a55b-2d60215734dd">
 </div>
-<div>
+<div align="center">
 user.txt
 </div>
 </br>
@@ -267,7 +267,7 @@ By following the write up, to do this, first I needed to know the IP of the dock
 <div align="center">
   <img src="https://github.com/user-attachments/assets/70212720-18e7-427c-9895-02837268d0bc">
 </div>
-<div>
+<div align="center">
 docker container IP
 </div>
 </br>
@@ -284,7 +284,7 @@ Next, I tried to find another IP in the subnet. To do this, I used this command:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/28e23640-57bd-4ad4-943c-81f3815991b1">
 </div>
-<div>
+<div align="center">
 another ip
 </div>
 </br>
@@ -296,7 +296,7 @@ From enumerating, I found out there are another ip on `172.19.0.1` which is supp
 <div align="center">
   <img src="https://github.com/user-attachments/assets/3d63ce54-0b3c-407c-8390-aae898b352ef">
 </div>
-<div>
+<div align="center">
 enumerating result
 </div>
 </br>
@@ -310,7 +310,7 @@ Next, I tried to connect to SSH by user that were found earlier which is `august
 <div align="center">
   <img src="https://github.com/user-attachments/assets/ca07e788-2e9a-49ed-965c-4e547cf9ad29">
 </div>
-<div>
+<div align="center">
 ssh login as augustus
 </div>
 </br>
@@ -322,7 +322,7 @@ At this time, I successfully connected to ssh as augustus. Now, trying to become
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a8c41f6c-c93d-46a7-9cb3-56746d14ac20">
 </div>
-<div>
+<div align="center">
 host
 </div>
 </br>
@@ -332,7 +332,7 @@ From the picture above, it seems that this ssh shell is in the same IP as the ma
 <div align="center">
   <img src="https://github.com/user-attachments/assets/95d2efba-be4f-46de-a66d-573cec8629a1">
 </div>
-<div>
+<div align="center">
 augustus directory on docker container
 </div>
 </br>
@@ -340,7 +340,7 @@ augustus directory on docker container
 <div align="center">
   <img src="https://github.com/user-attachments/assets/7c11631e-9f34-4bbd-aac1-beb9d7b751c4">
 </div>
-<div>
+<div align="center">
 augustus directory on ssh shell
 </div>
 </br>
@@ -352,7 +352,7 @@ First, I ran `cp /bin/bash` into augustus home directory in the ssh shell.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/73c3cd14-abfa-44bd-b9f6-0e95bd841d00">
 </div>
-<div>
+<div align="center">
 cp /bin/bash to augustus home directory
 </div>
 </br>
@@ -362,7 +362,7 @@ And that will appeared too in the docker container.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a23a1295-edc7-4bba-b197-50cb84f2e8cb">
 </div>
-<div>
+<div align="center">
 bash appeared in docker container
 </div>
 </br>
@@ -379,7 +379,7 @@ Next, go to the ssh shell again and run the bash `./bash -p`.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/99d0cb1c-144e-407e-80b8-fbbfe88c9357">
 </div>
-<div>
+<div align="center">
 gain root shell in ssh
 </div>
 </br>
@@ -389,7 +389,7 @@ Next, moved to `/root` directory to read the root.txt
 <div align="center">
   <img src="https://github.com/user-attachments/assets/01d5a2b9-722e-44f0-b931-ba81e1652041">
 </div>
-<div>
+<div align="center">
 root.txt
 </div>
 </br>
